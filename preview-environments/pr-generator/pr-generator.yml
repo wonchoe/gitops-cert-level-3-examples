@@ -12,6 +12,8 @@ spec:
         owner: wonchoe
         repo: gitops-cert-level-3-examples
       requeueAfterSeconds: 180
+      labels:
+        - preview-ready
   template:
     metadata:
       name: 'myapp-{{.branch}}'
